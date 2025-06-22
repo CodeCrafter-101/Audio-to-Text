@@ -20,5 +20,11 @@
 pip install SpeechRecognition pydub
 ````
 
-
-
+## How It Works
+### 1. Upload Audio
+- Upload `.wav`, `.mp3`, or `.flac` files via Google Colab’s file upload feature
+### 2. Preprocessing
+- Convert the audio (if needed) to `.wav` using `ffmpeg` via `subprocess`.
+- Load the audio with `pydub.AudioSegment`.
+- Split long audio files into smaller chunks based on silence using `split_on_silence`.
+  
