@@ -16,8 +16,7 @@
 - `subprocess`, `os` – for audio format conversion (e.g., using `ffmpeg`)
 
 ## Requirements
-````
-bash
+```` 
 pip install SpeechRecognition pydub
 ````
 
